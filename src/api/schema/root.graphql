@@ -1,0 +1,13 @@
+type Product {
+    id: ID!,
+    title: String!,
+    filling: String!,
+    features: [String!]!,
+    description: String!,
+    weight: Float!,
+    enabled: Boolean!,
+}
+
+type Query {
+    allProducts: [Product]
+}
